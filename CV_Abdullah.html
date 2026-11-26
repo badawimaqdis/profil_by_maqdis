@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Vitae - Abdullah</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#e9eef5;color:#243247;line-height:1.6;padding:30px}
+.cv{max-width:900px;margin:auto;background:#fff;box-shadow:0 12px 35px rgba(15,23,42,.12);display:grid;grid-template-columns:290px 1fr;min-height:1000px;border-radius:12px;overflow:hidden}
+.sidebar{background:#12233b;color:#fff;padding:36px 28px}
+.profile{width:145px;height:145px;border-radius:50%;border:4px solid #5cc8f5;background:#dce8f3;object-fit:cover;display:block;margin:0 auto 22px}
+.name{text-align:center;font-size:26px;line-height:1.25;margin-bottom:8px}
+.role{text-align:center;color:#75d2fa;font-size:14px;margin-bottom:28px}
+.side-section{margin-top:26px}.side-section h2{font-size:15px;color:#75d2fa;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid #46607c;padding-bottom:8px;margin-bottom:12px}
+.side-section p,.side-section li{font-size:13px;color:#e2eaf3;margin:8px 0;overflow-wrap:anywhere}
+.side-section ul{list-style:none}.side-section li::before{content:"• ";color:#75d2fa}
+.main{padding:40px 38px}.section{margin-bottom:30px}.section h2{font-size:19px;color:#12233b;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #39a9df;padding-bottom:8px;margin-bottom:15px}
+.section p{font-size:14px;color:#526176}.entry{margin:0 0 18px}.entry h3{font-size:15px;color:#1c3554}.entry .meta{font-size:12px;color:#1687bd;margin:3px 0 6px}.entry p,.entry li{font-size:13px;color:#526176}.entry ul{padding-left:18px;margin-top:6px}
+.skill-list{display:flex;flex-wrap:wrap;gap:8px}.skill{background:#eaf6fc;color:#176c99;border:1px solid #c7e9f8;border-radius:20px;padding:6px 12px;font-size:12px}
+.print-btn{display:block;margin:20px auto;background:#1687bd;color:white;border:0;border-radius:7px;padding:12px 22px;font-size:14px;cursor:pointer}
+@media(max-width:700px){body{padding:12px}.cv{grid-template-columns:1fr}.sidebar{padding:28px}.main{padding:28px}}
+@media print{body{padding:0;background:#fff}.cv{box-shadow:none;border-radius:0;max-width:none}.print-btn{display:none}@page{margin:0.5in}}
+</style>
+</head>
+<body>
+<div class="cv">
+  <aside class="sidebar">
+    <!-- Ganti foto-profil.jpg dengan nama file foto kamu. Jika belum ada, hapus tag img ini. -->
+    <img class="profile" src="foto-profil.jpg" alt="Foto profil" onerror="this.style.display='none'">
+    <h1 class="name">Abdullah Badawi</h1>
+    <p class="role">Pelajar Rekayasa Perangkat Lunak</p>
+
+    <div class="side-section">
+      <h2>Kontak</h2>
+      <p>Email: emailkamu@example.com</p>
+      <p>Telepon: 08xxxxxxxxxx</p>
+      <p>Alamat: Surabaya, Indonesia</p>
+      <p>Instagram: @username</p>
+    </div>
+
+    <div class="side-section">
+      <h2>Keahlian</h2>
+      <ul>
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript dasar</li>
+        <li>PHP &amp; MySQL</li>
+        <li>Kotlin dasar</li>
+        <li>Microsoft Office</li>
+        <li>Kerja sama tim</li>
+      </ul>
+    </div>
+
+    <div class="side-section">
+      <h2>Karakter</h2>
+      <ul>
+        <li>Disiplin</li>
+        <li>Bertanggung jawab</li>
+        <li>Mau belajar</li>
+        <li>Komunikatif</li>
+      </ul>
+    </div>
+  </aside>
+
+
+  <main class="main">
+    <section class="section">
+      <h2>Profil</h2>
+      <p>Saya merupakan pelajar Rekayasa Perangkat Lunak yang memiliki ketertarikan pada teknologi dan pengembangan website. Saya senang mempelajari hal baru, mengembangkan keterampilan pemrograman, serta berusaha menyelesaikan pekerjaan dengan teliti, disiplin, dan bertanggung jawab.</p>
+    </section>
+
+
+    <section class="section">
+      <h2>Pendidikan</h2>
+      <div class="entry">
+        <h3>SMKS 17 Agustus 1945 Surabaya</h3>
+        <div class="meta">2024 – Sekarang | Rekayasa Perangkat Lunak (RPL)</div>
+        <p>Mempelajari dasar pemrograman, pengembangan website, basis data, dan perancangan aplikasi.</p>
+      </div>
+      <div class="entry">
+        <h3>Sekolah Menengah Pertama</h3>
+        <div class="meta">2021 – 2024</div>
+        <p>Lengkapi dengan nama sekolah SMP kamu.</p>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <h2>Proyek</h2>
+      <div class="entry">
+        <h3>Website Biodata</h3>
+        <p>Membuat website sederhana untuk menampilkan biodata menggunakan HTML dan CSS.</p>
+      </div>
+      <div class="entry">
+        <h3>Aplikasi Data Pegawai</h3>
+        <p>Membuat form input dan tabel data pegawai dengan fitur menambah serta menghapus data.</p>
+      </div>
+      <div class="entry">
+        <h3>Website Login &amp; Registrasi</h3>
+        <p>Membuat halaman login dan registrasi dengan HTML, CSS, serta JavaScript dasar.</p>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <h2>Kemampuan Teknis</h2>
+      <div class="skill-list">
+        <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span>
+        <span class="skill">PHP</span><span class="skill">MySQL</span><span class="skill">Kotlin</span>
+        <span class="skill">GitHub</span><span class="skill">VS Code</span>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <h2>Tujuan</h2>
+      <p>Terus meningkatkan kemampuan di bidang teknologi informasi dan memperoleh pengalaman dalam membuat aplikasi serta website yang bermanfaat.</p>
+    </section>
+  </main>
+</div>
+<button class="print-btn" onclick="window.print()">Cetak CV / Simpan PDF</button>
+</body>
+</html>
