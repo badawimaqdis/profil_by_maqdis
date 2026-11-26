@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Abdullah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        /* Navbar */
+        nav {
+            background: #0f172a;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Header */
+        header {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 8%;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            max-width: 1000px;
+        }
+
+        .profile-img {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+            object-fit: cover;
+        }
+
+        .header-text h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .header-text h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .header-text p {
+            line-height: 1.7;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        /* Section */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        .section-title span {
+            color: #0284c7;
+        }
+
+        /* About */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            color: #475569;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card h3 {
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+
+        /* Education */
+        .education-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .education-card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #0284c7;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+        }
+
+        .education-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: #64748b;
+            margin-top: 5px;
+        }
+
+        /* Project */
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .project-card h3 {
+            color: #0284c7;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Contact */
+        #contact {
+            background: #0f172a;
+            color: white;
+        }
+
+        #contact .section-title {
+            color: white;
+        }
+
+        .contact-container {
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact-container a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-text h1 {
+                font-size: 30px;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>MyCV</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <header id="home">
+        <div class="header-content">
+
+            <img src="foto.jpg" alt="Foto Profil" class="profile-img">
+
+            <div class="header-text">
+                <h1>Abdullah Badawi</h1>
+                <h3>Software Engineering Student</h3>
+
+                <p>
+                    Halo! Saya seorang pelajar yang tertarik dengan dunia teknologi,
+                    pemrograman, dan pengembangan website. Saya senang belajar hal baru
+                    dan mengembangkan kemampuan di bidang teknologi informasi.
+                </p>
+
+                <a href="#contact" class="btn">Hubungi Saya</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">Tentang <span>Saya</span></h2>
+
+        <div class="about">
+            <p>
+                Saya merupakan pelajar jurusan Rekayasa Perangkat Lunak yang memiliki
+                minat dalam pengembangan website dan teknologi digital. Saya memiliki
+                semangat untuk belajar, mampu bekerja sama dalam tim, serta berusaha
+                menyelesaikan tugas dengan baik dan bertanggung jawab.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">Keahlian <span>Saya</span></h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Membuat struktur halaman website.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Mendesain tampilan website agar menarik.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Membuat website menjadi interaktif.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>PHP & MySQL</h3>
+                <p>Membuat website dinamis dan mengelola database.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2 class="section-title">Riwayat <span>Pendidikan</span></h2>
+
+        <div class="education-container">
+
+            <div class="education-card">
+                <h3>SMKS 17 Agustus 1945 Surabaya</h3>
+                <p>Jurusan Rekayasa Perangkat Lunak (RPL)</p>
+                <p>2024 - Sekarang</p>
+            </div>
+
+            <div class="education-card">
+                <h3>Sekolah Menengah Pertama</h3>
+                <p>Nama sekolah sebelumnya</p>
+                <p>2021 - 2024</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project">
+        <h2 class="section-title">Project <span>Saya</span></h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Website Biodata</h3>
+                <p>
+                    Website yang menampilkan informasi pribadi dengan menggunakan
+                    HTML dan CSS.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Sistem Data Pegawai</h3>
+                <p>
+                    Aplikasi sederhana untuk menambahkan, menghapus, dan
+                    menampilkan data pegawai.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Website Login</h3>
+                <p>
+                    Website login dan registrasi dengan tampilan sederhana
+                    menggunakan HTML, CSS, dan JavaScript.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Kontak <span>Saya</span></h2>
+
+        <div class="contact-container">
+            <p>Email : <a href="mailto:emailkamu@gmail.com">emailkamu@gmail.com</a></p>
+            <p>Instagram : <a href="https://instagram.com/username" target="_blank">@username</a></p>
+            <p>WhatsApp : 08xxxxxxxxxx</p>
+            <p>Alamat : Surabaya, Indonesia</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abdullah Badawi | Personal CV Website</p>
+    </footer>
+
+</body>
+</html>
